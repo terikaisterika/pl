@@ -24,7 +24,4 @@ test.describe('Поиск товаров', () => {
     await productCardComponent.getInfoComponentStart();
     await productCardComponent.checkProductName(searchPhrase);
   });
-  test.afterAll(async ({ page }) => {
-    await page.close();
-  });
 });

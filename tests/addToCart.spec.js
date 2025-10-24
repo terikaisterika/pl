@@ -44,7 +44,4 @@ test.describe('Добавление товара в корзину', () => {
 
     await headerComponent.checkCountAndAmountInCartHeader(1, priceFirstProduct);
   });
-  test.afterAll(async ({ page }) => {
-    await page.close();
-  });
 });
